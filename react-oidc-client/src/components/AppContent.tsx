@@ -22,8 +22,8 @@ export default class AppContent extends React.Component<any, any> {
     this.getUser();
   }
 
-  public login = () => {
-    this.authService.login();
+  public login = async (): Promise<void> => {
+   this.authService.login();
   };
 
 
